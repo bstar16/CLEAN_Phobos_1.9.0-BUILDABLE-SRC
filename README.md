@@ -4,4 +4,4 @@ Buildable src reconstructed from the clean Phobos 1.9.0 jar. Full buildable and 
 
 How to build
 Macos: ./gradlew build
-Windows gradlew build
+Windows: gradlew build
