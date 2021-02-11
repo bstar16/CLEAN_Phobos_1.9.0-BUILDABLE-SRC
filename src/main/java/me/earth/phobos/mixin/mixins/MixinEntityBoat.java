@@ -30,16 +30,16 @@ public abstract class MixinEntityBoat/* extends MixinEntity*/ {
         }
     }
 
-    /*@Inject(method={"updatePassenger"}, at={@At(value="HEAD")}, cancellable=true)
+    @Inject(method={"updatePassenger"}, at={@At(value="HEAD")}, cancellable=true)
     public void updatePassenger(Entity passenger, CallbackInfo ci) {
         if (BoatFly.INSTANCE.isEnabled() && passenger == Minecraft.getMinecraft().player) {
             ci.cancel();
             float f = 0.0f;
-            float f1 = (float)((((Entity)this).isDead ? (double)0.01f : this.getMountedYOffset()) + passenger.getYOffset());
-            Vec3d vec3d = new Vec3d((double)f, 0.0, 0.0).rotateYaw(-(((Entity)this).rotationYaw * ((float)Math.PI / 180) - 1.5707964f));
-            passenger.setPosition(((Entity)this).posX + vec3d.x, ((Entity)this).posY + (double)f1, ((Entity)this).posZ + vec3d.z);
+            float f1 = (float)((((Entity)(Object)this).isDead ? (double)0.01f : this.getMountedYOffset()) + passenger.getYOffset());
+            Vec3d vec3d = new Vec3d((double)f, 0.0, 0.0).rotateYaw(-(((Entity)(Object)this).rotationYaw * ((float)Math.PI / 180) - 1.5707964f));
+            passenger.setPosition(((Entity)(Object)this).posX + vec3d.x, ((Entity)(Object)this).posY + (double)f1, ((Entity)(Object)this).posZ + vec3d.z);
         }
     }
-    */
+
 }
 
